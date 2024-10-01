@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Latar belakang halaman */
+    color: #333; /* Warna teks default */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #ad1457; /* Warna judul */
+    margin-bottom: 20px;
+    text-align: center; /* Judul rata tengah */
+    font-size: 2rem; /* Ukuran font yang responsif */
+    width: 100%; /* Lebar penuh container */
+    max-width: 100%; /* Menghindari lebar lebih dari container */
+    word-wrap: break-word; /* Menghindari teks meluap keluar container */
+}
+
+/* Kotak form dengan efek 3 dimensi */
+.container {
+    background-color: #fff; /* Warna latar belakang kotak */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    width: 400px; /* Lebar kotak */
+    max-width: 90%; /* Pastikan responsif */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ad1457; /* Warna teks label */
+}
+
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #ad1457; /* Warna tombol proses */
+    color: white; /* Warna teks tombol */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #d5006d; /* Warna tombol saat hover */
+}
+
+/* Styling tombol Kembali dan History */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #ad1457; /* Warna tombol Kembali dan History */
+    color: white; /* Warna teks tombol */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 45%; /* Lebar tombol */
+}
+
+button:hover {
+    background-color: #d5006d; /* Warna tombol saat hover */
+}
+
+/* Styling tabel di halaman history */
+table {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Menghilangkan jarak antara border */
+    margin: 20px 0; /* Margin atas dan bawah */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+table th, table td {
+    padding: 12px; /* Padding untuk sel tabel */
+    background: #fff; /* Warna latar belakang tabel */
+    border: 1px solid #ddd; /* Border untuk sel tabel */
+    text-align: left; /* Rata kiri teks */
+}
+
+table th {
+    background-color: #ad1457; /* Warna latar belakang header tabel */
+    color: #fff; /* Warna teks header tabel */
+    font-weight: bold; /* Bold untuk header */
+}
+
+/* Penyesuaian untuk tombol Kembali di halaman History */
+.history-buttons {
+    display: flex; /* Flexbox untuk penataan tombol */
+    justify-content: center; /* Pusatkan tombol */
+    margin-top: 20px; /* Margin atas untuk tombol */
+}
+
+.history-buttons button {
+    width: 150px; /* Lebar tombol Kembali */
+    margin: 0 10px; /* Margin horizontal untuk spasi antar tombol */
+}
+
+/* Styling tabel di halaman history */
+table {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Menghilangkan jarak antara border */
+    margin: 20px 0; /* Margin atas dan bawah */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+table th {
+    padding: 12px; /* Padding untuk sel tabel */
+    background: #fff; /* Warna latar belakang header tabel */
+    border: 1px solid #ddd; /* Border untuk sel tabel */
+    text-align: left; /* Rata kiri teks */
+    background-color: #fff; /* Warna latar belakang header tabel */
+    color: #ad1457; /* Warna teks header tabel */
+    font-weight: bold; /* Bold untuk header */
+}
+
+table td {
+    padding: 12px; /* Padding untuk sel tabel */
+    background: #fff; /* Warna latar belakang tabel */
+    border: 1px solid #ddd; /* Border untuk sel tabel */
+    text-align: left; /* Rata kiri teks */
+    color: #333; /* Warna teks untuk isi tabel (hitam) */
+}
+
+.table-container {
+    width: 100%; /* Lebar kontainer penuh */
+    max-width: 90%; /* Max width untuk responsif */
+    overflow-x: auto; /* Menambahkan scroll horizontal jika diperlukan */
+    margin: 20px 0; /* Margin untuk spasi */
+}
+
+/* Styling untuk status AC */
+.status-ringan {
+    color: #66bb6a; /* Hijau untuk AC Menyala Ringan */
+}
+.status-sedang {
+    color: #ffeb3b; /* Kuning untuk AC Menyala Sedang */
+}
+.status-tinggi {
+    color: #d50000; /* Merah untuk AC Menyala Tinggi */
+}
+
+

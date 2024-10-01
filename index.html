@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Status Kerja AC</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitor Status Kerja AC</h1>
+        <form action="process.php" method="post">
+            <label for="temperature">Suhu (°C):</label>
+            <input type="number" id="temperature" name="temperature" required><br><br>
+
+            <label for="humidity">Kelembapan (%):</label>
+            <input type="number" id="humidity" name="humidity" required><br><br>
+
+            <input type="submit" value="Proses">
+        </form>
+        <div class="buttons">
+            <button onclick="window.location.href='history.php';">Lihat History</button>
+        </div>
+    </div>
+</body>
+</html>
